@@ -1,0 +1,96 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes rotate{
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+@keyframes rotate2{
+    from{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+.circleRotate{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    /* transition: 1s; */
+    animation: rotate 15s linear infinite ;
+}
+.circle{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: tomato;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: rotate2 15s linear infinite ;
+}
+.circleRotate:hover{
+    animation-play-state: paused;
+}
+.circleRotate:hover .circle{
+    animation-play-state: paused;
+}
+#circle1{
+    top: 0;
+}
+#circle2{
+   left: 0;
+}
+#circle3{
+    top: 100%;
+}
+#circle4{
+    left: 100%;
+}
+.circle>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.circle>img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.circle>a{
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.circleRotate>span{
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate2 15s linear infinite ;
+}
