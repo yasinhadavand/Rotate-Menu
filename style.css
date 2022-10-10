@@ -26,8 +26,8 @@ body,html{
 }
 .circleRotate{
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background-color: aqua;
     top: 50%;
     left: 50%;
@@ -38,8 +38,8 @@ body,html{
 }
 .circle{
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     background-color: tomato;
     top: 50%;
     left: 50%;
@@ -91,7 +91,7 @@ body,html{
 }
 .span{
     position: absolute;
-    font-size: 50px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
